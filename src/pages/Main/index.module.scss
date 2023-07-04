@@ -1,0 +1,21 @@
+.container {
+  max-width: 1178px;
+  margin: 0 auto;
+  padding: 52px 10px 37px;
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    padding: 85px 10px 84px;
+  }
+
+  .heading {
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+  }
+
+  .footer {
+    display: flex;
+  }
+}
