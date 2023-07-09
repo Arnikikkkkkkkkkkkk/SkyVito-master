@@ -6,12 +6,9 @@
   },
   "extends": [
     "eslint:recommended",
+    "prettier",
     "plugin:react/recommended",
-    "plugin:react/jsx-runtime",
-    "plugin:react-hooks/recommended",
-    "plugin:import/recommended",
-    "airbnb",
-    "prettier"
+    "plugin:react/jsx-runtime"
   ],
   "parserOptions": {
     "ecmaFeatures": {
@@ -20,36 +17,11 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-   "prettier"
-  ],
+  "plugins": ["react"],
   "rules": {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "react/prop-types": 0,
-    "react/destructuring-assignment": [0],
-    "react/react-in-jsx-scope": [0],
-    "prettier/prettier": 2,
-    "react/function-component-definition": [
-      "error",
-      {
-        "namedComponents": ["function-declaration", "arrow-function"],
-        "unnamedComponents": "arrow-function"
-      }
-    ],
-    "arrow-body-style": "off",
-    "jsx-a11y/label-has-associated-control": ["error", {
-      "required": {
-        "some": ["nesting", "id"]
-      }
-    }],
-    "jsx-a11y/label-has-for": ["error", {
-      "required": {
-        "some": ["nesting", "id"]
-      }
-    }],
-    "react/jsx-props-no-spreading": "off",
-    "no-param-reassign": [2, {"props": false}]
+    "react/destructuring-assignment": [0]
   },
   "settings": {
     "react": {

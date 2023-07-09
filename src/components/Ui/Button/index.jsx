@@ -1,11 +1,23 @@
-/* eslint-disable react/button-has-type */
 import cn from 'classnames'
+import classes from './index.module.css'
 
-import classes from './index.module.scss'
-
-const Button = ({ children, className, type, ...attrs }) => {
+const Button = ({
+  btnName,
+  type,
+  disabled,
+  className,
+  children,
+  onClick,
+  ...attrs
+}) => {
   return (
-    <button {...attrs} type={type} className={cn(classes.button, className)}>
+    <button
+      {...attrs}
+      type={type}
+      disabled={disabled}
+      className={cn(classes.btn, classes[`${btnName}`], className)}
+      onClick={onClick}
+    >
       {children}
     </button>
   )
